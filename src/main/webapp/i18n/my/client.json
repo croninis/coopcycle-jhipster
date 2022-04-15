@@ -1,0 +1,28 @@
+{
+  "coopCycleApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Client အသစ်ထည့်မည်",
+        "createOrEditLabel": "Client အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+        "notFound": "No Clients found"
+      },
+      "created": "{{ param }} အိုင်ဒီဖြင့် Client အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+      "updated": "{{ param }} အိုင်ဒီဖြင့် Client တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+      "deleted": "{{ param }} အိုင်ဒီဖြင့် Client တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+      "delete": {
+        "question": "Client {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "id": "ID",
+      "balance": "Balance",
+      "orderCount": "Order Count",
+      "user": "User",
+      "commande": "Commande",
+      "paiement": "Paiement"
+    }
+  }
+}

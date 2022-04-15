@@ -1,0 +1,33 @@
+{
+  "coopCycleApp": {
+    "commercant": {
+      "home": {
+        "title": "Commercants",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Commercant အသစ်ထည့်မည်",
+        "createOrEditLabel": "Commercant အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+        "notFound": "No Commercants found"
+      },
+      "created": "{{ param }} အိုင်ဒီဖြင့် Commercant အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+      "updated": "{{ param }} အိုင်ဒီဖြင့် Commercant တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+      "deleted": "{{ param }} အိုင်ဒီဖြင့် Commercant တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+      "delete": {
+        "question": "Commercant {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+      },
+      "detail": {
+        "title": "Commercant"
+      },
+      "id": "ID",
+      "shopRating": "Shop Rating",
+      "isOpen": "Is Open",
+      "averageDeliveryTime": "Average Delivery Time",
+      "openingTime": "Opening Time",
+      "closingTime": "Closing Time",
+      "tags": "Tags",
+      "user": "User",
+      "commande": "Commande",
+      "paiement": "Paiement",
+      "cooperative": "Cooperative"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "coopCycleApp": {
+    "commercant": {
+      "home": {
+        "title": "Commercants",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Commercant",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Commercant",
+        "notFound": "No Commercants found"
+      },
+      "created": "Ένα νέο Commercant έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Commercant έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Commercant έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Commercant {{ id }};"
+      },
+      "detail": {
+        "title": "Commercant"
+      },
+      "id": "ID",
+      "shopRating": "Shop Rating",
+      "isOpen": "Is Open",
+      "averageDeliveryTime": "Average Delivery Time",
+      "openingTime": "Opening Time",
+      "closingTime": "Closing Time",
+      "tags": "Tags",
+      "user": "User",
+      "commande": "Commande",
+      "paiement": "Paiement",
+      "cooperative": "Cooperative"
+    }
+  }
+}

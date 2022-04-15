@@ -1,0 +1,90 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-livreur-heading" data-cy="LivreurCreateUpdateHeading" jhiTranslate="coopCycleApp.livreur.home.createOrEditLabel">
+        Create or edit a Livreur
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopCycleApp.livreur.vehicleType" for="field_vehicleType">Vehicle Type</label>
+          <input
+            type="text"
+            class="form-control"
+            name="vehicleType"
+            id="field_vehicleType"
+            data-cy="vehicleType"
+            formControlName="vehicleType"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopCycleApp.livreur.nbEarnings" for="field_nbEarnings">Nb Earnings</label>
+          <input
+            type="number"
+            class="form-control"
+            name="nbEarnings"
+            id="field_nbEarnings"
+            data-cy="nbEarnings"
+            formControlName="nbEarnings"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopCycleApp.livreur.nbRides" for="field_nbRides">Nb Rides</label>
+          <input type="number" class="form-control" name="nbRides" id="field_nbRides" data-cy="nbRides" formControlName="nbRides" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopCycleApp.livreur.transporterRating" for="field_transporterRating"
+            >Transporter Rating</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="transporterRating"
+            id="field_transporterRating"
+            data-cy="transporterRating"
+            formControlName="transporterRating"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopCycleApp.livreur.user" for="field_user">User</label>
+          <select class="form-control" id="field_user" data-cy="user" name="user" formControlName="user">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="userOption.id === editForm.get('user')!.value?.id ? editForm.get('user')!.value : userOption"
+              *ngFor="let userOption of usersSharedCollection; trackBy: trackUserById"
+            >
+              {{ userOption.id }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
